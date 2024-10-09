@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Microsoft JhengHei;
+}
+body{
+    background-image: url(../img/day\(2\).jpg);
+    background-size: 100% 2048px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#wrapper{
+    margin: 0px auto;
+    width: 1024px;  
+    
+}
+#logo{
+    height:250px;
+}
+#logo img{
+    width: 1024px;;
+    height: 250px;   
+}
+nav{
+    background-color:#0072E3;
+    text-align: center;
+}
+ul{
+    display: inline-block;
+    margin: 0px;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 15px 15px;
+    color: rgb(17, 2, 2);
+    font-size: 20px;
+    text-decoration: none;
+
+}
+li a:hover{
+    background-color: #FFFCEC;
+}
+
+#contect{
+    text-align: center;
+    background-color:	rgba(255, 255, 255, 0.7) ;
+    padding-top:10px ;
+    
+}
+
+#text{
+    text-align: center;
+    background-color:	rgba(255, 255, 255, 0.7) ;
+    padding-top:50px ;
+    
+}
+#map{
+    text-align: center;
+    padding:20px ;
+    background-color:	rgba(255, 255, 255, 0.7) ;
+
+}
+
+#mes{
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+}
+#run{
+    padding: 30px;
+    font-size: 20px;
+    border: 3px 0 3px 0;
+    width:auto;
+}
+#video{
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#video p{
+    padding:20px;
+}
+#schedule{
+    width:75%; 
+    height: 400px;
+    border:0;
+    margin:0 auto;
+    padding:20px;
+}
+th{
+    background-color: #0080FF;
+}
+tr:nth-child(even){
+    background-color: #97CBFF;
+
+}
+tr:nth-child(odd){
+    background-color: #FFFfff;
+
+}
+#mestrain {
+    text-align: center;
+
+}
+#mestrain h1{
+    padding-top:20px;
+    text-align: center;
+
+}
+#mestrain h2{
+    padding-top:20px;
+    text-align: center;
+
+}
+footer{
+    background-color: aquamarine ;
+    text-align: center;
+    width:100%;
+    height:100px;
+}
+footer p{
+    padding-top:30px ;
+}
+
+marquee{
+    background-color: #7AFEC6;
+    width: 100%;
+   
+}
+
+
+#cover{
+    padding: 40px;
+    
+}
+.coverflow{
+    width: 700px;
+    height: 490px;
+    position: relative;
+    display: block;
+    align-items:center;
+    margin:0 auto;
+    
+}
+.coverflow>a{
+    display: block;
+    position: absolute;
+    border: 10px solid #00AEAE;
+    border-radius: 10px;
+    top:0;
+    left:0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+/*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+	-webkit-animation: silder 15s linear infinite;
+	animation: silder 15s linear infinite;
+}
+
+.coverflow>a>img{
+    max-width: 100%;
+    
+}
+
+/*動畫關鍵影格*/
+@-webkit-keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+@keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+/*每個圖片各延遲5秒*/
+.coverflow>a:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;               
+}
+
+.coverflow>a:nth-child(2) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+
+.coverflow>a:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;    
+}

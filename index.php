@@ -5,21 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人資料</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" href="img/logo.ico" type="image/x-icon"/>
-
-    
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="img/logo.ico" type="image/x-icon"/>    
 </head>
 <body>
-    <div>
-        <p>
-            <?php include("get-index-meta-data.php"); ?>
-      
-            <hr />
-      
-            <?php include('get-cpu-load.php'); ?>
-                  </p>
-    </div>
+<div class="jumbotron">
+      <p>
+      <?php include("get-index-meta-data.php"); ?>
+
+      <hr />
+
+      <?php include('get-cpu-load.php'); ?>
+			</p>
     <div id="wrapper">
         <header>
             <nav>
